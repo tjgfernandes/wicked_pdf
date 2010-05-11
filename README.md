@@ -37,6 +37,8 @@ Next:
                                :right  => SIZE}, #OPTIONAL
                    :orientation => 'Landscape or Portrait', #OPTIONAL, default Portrait
                    :page_size => 'A4, Letter, ...', #OPTIONAL, default A4
+                   :page_height => SIZE # default unit: mm 
+                   :page_width => SIZE # default unit: mm 
                    :proxy => 'TEXT', #OPTIONAL
                    :username => 'TEXT', #OPTIONAL
                    :password => 'TEXT', #OPTIONAL

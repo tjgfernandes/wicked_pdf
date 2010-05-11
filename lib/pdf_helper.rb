@@ -93,7 +93,7 @@ module PdfHelper
     
     def parse_others opts
       unless opts.blank? 
-        r = make_options(opts, [:orientation, :page_size, :proxy, :username, :password, :cover, :dpi, :encoding, :user_style_sheet])
+        r = make_options(opts, [:orientation, :page_size,:page_height,:page_width, :proxy, :username, :password, :cover, :dpi, :encoding, :user_style_sheet])
         r += make_options(opts, [:redirect_delay, :zoom, :page_offset], "", :numeric)
         r + make_options(opts, [:book, :default_header, :disable_javascript, :greyscale, :lowquality, :enable_plugins, :disable_internal_links, :disable_external_links, :print_media_type, :disable_smart_shrinking, :use_xserver, :no_background], "", :boolean)
       end
